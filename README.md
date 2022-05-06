@@ -1,9 +1,9 @@
-도커 로그인
+#### 도커 로그인
 ```
 docker login
 ```
 
-도커 이미지 검색
+#### 도커 이미지 검색
 - d로 시작하는 이미지 모두 출력
 
 ```
@@ -14,35 +14,36 @@ drf_tutorial_django   latest    cb3899be2008   10 days ago   974MB
 
 ```
 
-도커 이미지 태그명 변경
+#### 도커 이미지 태그명 변경
 
 ```
 docker image tag [before tag] [after tag]
 ```
 
 
-도커 레지스트리에서 nginx 이미지 검색
+#### 도커 레지스트리에서 nginx 이미지 검색
 ```
 docker search nginx
 ```
 
-도커 레지스트리에서 nginx 최신 버전 이미지 다운
+#### 도커 레지스트리에서 nginx 최신 버전 이미지 다운
 
 ```
 docker pull nginx:latest
 ```
 
-web이라는 컨테이너로 ginx 이미지를 받아 80 포트로 도커 데몬을 백그라운드(-d)로 실행
+#### web이라는 컨테이너로 ginx 이미지를 받아 80 포트로 도커 데몬을 백그라운드(-d)로 실행
 ```
 docker run -d --name web -p 80:80 nginx:latest
 ```
 
-도커 중지
+#### 도커 시작/중지
 ```
+docker start web
 docker stop web
 ```
 
-도커 허브에 컨테이너 업로드 
+#### 도커 허브에 컨테이너 업로드 
 
     - docker image tag [이미지] [아이디/이미지]
     - push 하려는 이미지의 tag를 설정하고 그 이미지를 push 한다.
